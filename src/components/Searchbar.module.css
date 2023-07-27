@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpffBiq3xnoxYLrupjZnuIyhp0FmsYMG6mXF9H7UIvycQ6d5loRmPRWrlSKM_IALD4Ro&usqp=CAU");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(4px) saturate(180%);
+  overflow: hidden;
+}
+
+.searchbar {
+  width: 30vw;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 10px;
+  margin: 2rem;
+  height: 3.5rem;
+}
+
+.searchbar input {
+  background-color: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 6px 6px;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: #cac7ff;
+}
+
+.searchbar button {
+  border: 0;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #58629b;
+  color: #cac7ff;
+  margin-left: 2.5rem;
+}
+
+.productContainer,
+.searchbar {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .searchbar {
+    width: 50vw;
+    max-width: 400px;
+    
+  
+  }
+  .searchbar button {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .searchbar {
+    width: 65vw;
+    max-width: 600px;
+  }
+  .searchbar button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
