@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(4px) saturate(180%);
-  overflow: hidden;
+  background-attachment: local;
 }
 
 .searchbar {
@@ -65,8 +65,6 @@
   .searchbar {
     width: 50vw;
     max-width: 400px;
-    
-  
   }
   .searchbar button {
     width: 25px;
@@ -83,4 +81,3 @@
     height: 10px;
   }
 }
-
